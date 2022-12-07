@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Install dependencies') {
             steps {
-                sh 'pip3 install -r src/Data_RBUK/requirements.txt'
+                sh 'pip3 install pandas'
             }
         }
         stage('Execute script') {
