@@ -2,6 +2,11 @@ pipeline {
     agent any
 
     stages {
+        stage('Install dependencies') {
+            steps {
+                sh 'pip3 -r src/Data_RBUK/requirements.txt'
+            }
+        }
         stage('Execute script') {
             steps {
                 sh 'python3 src/Data_RBUK/send_data_to_RBUK.py '
