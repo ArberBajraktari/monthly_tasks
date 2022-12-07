@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Execute script') {
             steps {
-                sh 'python3 --version'
+                sh 'python3 send_data_to_RBUK.py '
             }
         }
     }
