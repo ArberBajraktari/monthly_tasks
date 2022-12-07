@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Install dependencies') {
             steps {
-                sh 'pip install pandas'
+                sh 'pip3 install pandas --no-build-isolation'
             }
         }
         stage('Execute script') {
