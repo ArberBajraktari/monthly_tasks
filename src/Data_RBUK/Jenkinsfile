@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Execute script') {
             steps {
-                sh 'pwd'
-                //sh 'python3 send_data_to_RBUK.py '
+                sh 'python3 src/Data_RBUK/send_data_to_RBUK.py '
             }
         }
     }
