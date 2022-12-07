@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Install dependencies') {
             steps {
-                sh 'pip -r src/Data_RBUK/requirements.txt'
+                sh 'pip3 src/Data_RBUK/requirements.txt'
             }
         }
         stage('Execute script') {
