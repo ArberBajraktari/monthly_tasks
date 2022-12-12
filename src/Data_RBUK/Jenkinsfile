@@ -6,6 +6,7 @@ pipeline {
             steps{
                 sh 'python3 -m venv env'
                 sh 'source env/bin/activate'
+                sh 'pip config list -v'
             }
         }
         stage('Install dependencies') {
