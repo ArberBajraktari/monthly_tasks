@@ -2,6 +2,12 @@ pipeline {
     agent { label 'dockerserver' }
 
     stages {
+        stage('Creating private environment'){
+            steps{
+                sh 'python3 -m venv env'
+                sh 'source env/bin/activate'
+            }
+        }
         stage('Install dependencies') {
             steps {
                 sh 'pip3 install -r src/Data_RBUK/requirements.txt '
