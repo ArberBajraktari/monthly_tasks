@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'dockerserver' }
+    agent any
 
     stages {
         stage('Creating private environment'){
