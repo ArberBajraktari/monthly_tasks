@@ -1,5 +1,8 @@
+##### Custom made #####
 # CSV or Excel files
 **/Export/
+
+#######################
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
